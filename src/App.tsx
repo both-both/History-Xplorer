@@ -1,14 +1,18 @@
-import { Header } from "./components/layout/Header/Header";
-import { Main } from "./components/layout/Main/Main";
-import { Footer } from "./components/layout/Footer/Footer";
+import { Route, Routes } from "react-router-dom";
+import { LandingPage } from "./pages/LandingPage/LandingPage";
+import { TodayModule } from "./components/modules/TodayModule/TodayModule";
+import { ByDateModule } from "./components/modules/ByDateModule/ByDateModule";
+import { SinceModule } from "./components/modules/SinceModule/SinceModule";
 
 function App() {
   return (
-    <>
-      <Header />
-      <Main />
-      <Footer />
-    </>
+    <Routes>
+      <Route path="/" element={<LandingPage />}>
+        <Route path="/today" element={<TodayModule />} />
+        <Route path="/by-date" element={<ByDateModule />} />
+        <Route path="/since" element={<SinceModule />} />
+      </Route>
+    </Routes>
   );
 }
 

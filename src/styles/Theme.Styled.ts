@@ -10,30 +10,30 @@ const palette = {
 } as const;
 
 export const theme = {
-  colors: {
+  color: {
     palette,
 
-    lightmode: {
+    light: {
       background: palette.offWhite,
       text: palette.charcoal,
     },
 
-    darkmode: {
+    dark: {
       background: palette.nearBlack,
       text: palette.sand,
     },
   },
 
-  fonts: {
+  font: {
     primary: "Linden Hill",
     secondary: "Limelight",
   },
-  fontSizes: {
-    xs: "0.8rem",
-    s: "1rem",
-    m: "1.25rem",
-    l: "1.5rem",
-    xl: "1.8rem",
+  fontSize: {
+    xs: "1.25rem", //20px
+    s: "1.5rem", //24px
+    m: "2rem", //32px
+    l: "2.25rem", //36px
+    xl: "6rem", //6px
   },
   lineHeigth: {
     xs: "1.25rem",
