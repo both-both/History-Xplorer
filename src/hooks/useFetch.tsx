@@ -14,7 +14,7 @@ export const useFetch = <T,>(url: string) => {
         setTimeout(() => {
           setData(json);
           setIsLoading(false);
-        }, 2000);
+        }, 1000);
       } catch {
         setError("Der skete en fejl");
       }

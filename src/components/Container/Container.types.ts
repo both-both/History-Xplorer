@@ -4,7 +4,8 @@ export type ContainerTag =
   | "fieldset"
   | "figure"
   | "main"
-  | "article";
+  | "article"
+  | "li";
 
 export type ContainerProps = {
   children?: React.ReactNode;

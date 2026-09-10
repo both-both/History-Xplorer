@@ -8,18 +8,14 @@ export const GlobalStyle = createGlobalStyle`
 }
 
 body {
-    font-family: ${(props) => props.theme.font.primary};
-    font-size: ${({ theme }) => theme.fontSize.s};
+    font-family: ${theme.font.primary};
+    font-size: ${theme.fontSize.s};
     background-color: ${theme.color.dark.background};
+    color: ${theme.color.dark.text};
 
     &.light-mode{
-        background-color: ${({ theme }) => theme.color.light};
-        color: ${({ theme }) => theme.color.light.text}
-    }
-
-        &.dark-mode{
-        background-color: ${({ theme }) => theme.color.dark};
-        color: ${({ theme }) => theme.color.dark.text}
+        background-color: ${theme.color.light.background};
+        color: ${theme.color.light.text}
     }
 }
 

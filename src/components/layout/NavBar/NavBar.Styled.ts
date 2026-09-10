@@ -8,6 +8,11 @@ export const NavBarStyled = styled.nav`
   height: 8vw;
   border-bottom: 2rem solid ${theme.color.palette.charcoal};
 
+  body.light-mode & {
+    background-color: ${theme.color.light.background};
+    border-bottom-color: ${theme.color.palette.sand};
+  }
+
   ul {
     align-items: end;
     display: flex;
@@ -27,9 +32,13 @@ export const NavBarStyled = styled.nav`
     color: ${theme.color.dark.text};
     text-transform: uppercase;
 
-    a:hover {
+    body.light-mode & {
+      color: ${theme.color.light.text};
     }
-    a:active {
-    }
+  }
+
+  a:hover {
+  }
+  a:active {
   }
 `;

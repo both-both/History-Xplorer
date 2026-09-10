@@ -1,5 +1,6 @@
 import styled, { css, type RuleSet } from "styled-components";
 import type { ContainerStyleProps, ContainerTag } from "./Container.types";
+import { theme } from "../../styles/Theme.Styled";
 
 const byTag: Record<ContainerTag, RuleSet<ContainerStyleProps>> = {
   div: css<ContainerStyleProps>`
@@ -37,6 +38,18 @@ const byTag: Record<ContainerTag, RuleSet<ContainerStyleProps>> = {
     width: 100%;
   `,
   figure: css``,
+
+  li: css`
+    list-style: none;
+
+    h2 {
+      font-size: ${theme.fontSize.s};
+    }
+    p {
+      font-size: ${theme.fontSize.s};
+      line-height: 1.5;
+    }
+  `,
 };
 
 export const ContainerStyled = styled.div<
