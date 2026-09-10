@@ -1,10 +1,10 @@
 import { endpoints } from "../../../data/Endpoints";
 import { useFetch } from "../../../hooks/useFetch";
 import { Loader } from "../../elements/Loader/Loader";
-import { ContentWrapper } from "../../layout/ContentWrapper/ContentWrapper";
+
 import { EventCard } from "../EventCard/EventCard";
 import { TodaymoduleStyled } from "./TodayModule.Styled";
-import type { TodayResponse } from "./todayModule.type";
+import type { TodayResponse } from "./TodayModule.type";
 
 export const TodayModule = () => {
   const { data, isLoading, error } = useFetch<TodayResponse>(endpoints.today);
