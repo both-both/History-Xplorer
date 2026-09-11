@@ -1,7 +1,6 @@
 import { Container } from "../../Container/Container";
 import { EventCardStyled } from "./EventCard.Styled";
 import type { EventCardProps } from "./EventCard.type";
-import icon from "../../../assets/images/Bookmark.svg";
 import { ReadMoreButton } from "../../elements/ReadMoreButton/ReadMoreButton";
 import { HiOutlineBookOpen } from "react-icons/hi";
 

@@ -10,7 +10,7 @@ export const NavBarStyled = styled.nav`
 
   body.light-mode & {
     background-color: ${theme.color.light.background};
-    border-bottom-color: ${theme.color.palette.sand};
+    border-bottom-color: ${theme.color.palette.bronze};
   }
 
   ul {
@@ -34,11 +34,14 @@ export const NavBarStyled = styled.nav`
 
     body.light-mode & {
       color: ${theme.color.light.text};
+      border-bottom-color: ${theme.color.palette.bronze};
     }
   }
 
   a:hover {
+    text-decoration: underline;
   }
   a:active {
+    text-decoration: underline;
   }
 `;

@@ -1,21 +1,21 @@
-import type { ReactNode } from "react";
+import type React from "react";
 
-export type TodayProps = {
-  children: ReactNode;
+export type ByDateProps = {
+  children: React.ReactNode;
   year: string;
   text: string;
 };
-
-// TodayModule.type.ts
 export type EventLink = {
   title: string;
   link: string;
 };
+
 export type HistoryEvent = {
   year: string;
   text: string;
   links: EventLink[];
 };
-export type TodayResponse = {
+
+export type ByDateResponse = {
   data: { Events: HistoryEvent[] };
 };
