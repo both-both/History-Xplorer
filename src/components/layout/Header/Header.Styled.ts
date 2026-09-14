@@ -2,7 +2,6 @@ import styled from "styled-components";
 import { theme } from "../../../styles/Theme.Styled";
 
 export const HeaderStyled = styled.header`
-
   position: relative;
   height: 40vw;
   display: flex;
@@ -15,7 +14,7 @@ export const HeaderStyled = styled.header`
   }
 
   .header-plate {
-    padding: 4px
+    padding: 4px;
     position: relative;
     top: 80px;
     margin: auto;
