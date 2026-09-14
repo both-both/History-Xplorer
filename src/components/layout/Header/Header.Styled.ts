@@ -2,6 +2,7 @@ import styled from "styled-components";
 import { theme } from "../../../styles/Theme.Styled";
 
 export const HeaderStyled = styled.header`
+
   position: relative;
   height: 40vw;
   display: flex;
@@ -14,11 +15,12 @@ export const HeaderStyled = styled.header`
   }
 
   .header-plate {
+    padding: 4px
     position: relative;
     top: 80px;
     margin: auto;
-    height: 240px;
-    width: fit-content;
+    height: 340px;
+    width: 40vw;
     background-color: ${theme.color.dark.background};
     color: ${theme.color.dark.text};
     border: 24px solid ${theme.color.palette.sand};
